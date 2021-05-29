@@ -15,16 +15,6 @@ namespace testeef.Controllers
     public class ProductController : ControllerBase
     {
         [HttpGet]
-        [Route("")]
-
-        public async Task<ActionResult<List<Product>>> Get([FromServices] DataContext context)
-        {
-            var products = await context.Products.Include(x => x.User).ToListAsync();
-            return products;
-        }
-
-        
-        [HttpGet]
         [Route("users/{id}")]
 
         public async Task<ActionResult<List<Product>>> GetByIdUser([FromServices] DataContext context, string id)
