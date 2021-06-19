@@ -1,37 +1,34 @@
 ## Desafio: criar uma API REST C# com .Net Core e Entity Framework Core.
 
 Este repo usa os conceitos básicos da criação de uma API Web com o ASP.NET Core.
-documentação consultada - [Microsoft](https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-web-api?view=aspnetcore-5.0&tabs=visual-studio-code)
+documentação consultada [Microsoft](https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-web-api?view=aspnetcore-5.0&tabs=visual-studio-code)
 
 Seque os passos para a criação desta API:
 
 ✔ Criar um projeto de API Web.<br>
 ✔ Adicione uma classe de modelo e um contexto de banco de dados.<br>
-✔ Faça scaffold de um controlador com métodos CRUD.<br>
+✔ Faça o Controller com métodos CRUD.<br>
 ✔ Configure o roteamento, os caminhos de URL e os valores retornados.<br>
 ✔ Chamar a API Web com o Postman.<br/><br/>
-No final, você terá uma API REST que fornece um sistema de geração de número de cartão de crédito virtual.<br>
+No final, você terá uma API REST que fornece um sistema de geração de número aleatorio de cartão de crédito virtual.<br>
 
 ### Pré-requisitos
 
 - Visual Studio Code<br/>
-- C# para Visual Studio Code (versão mais recente)<br/>
-- SDK do .NET 5,0 ou posterior<br/>
+- Extensão C# para Visual Studio Code<br/>
+- SDK .NET core 3 ou superior<br/>
 - OS Windows 10<br/>
 
 ### Visão geral
 
 Você ira criar a seguinte API:
 
-| API                         | Descrição                          | Corpo da solicitação   | Corpo da resposta                        |
-| --------------------------- | ---------------------------------- | ---------------------- | ---------------------------------------- |
-| POST /v1/users              | Adiciona um novo usuario           | JSON com nome e email  | Objeto do usuario cadastrado             |
-| ----                        | -----------                        | ---------------------- | ------------------                       |
-| GET /v1/users               | Obtem todos os usuarios            | nenhum                 | Matriz de usuarios                       |
-| ----                        | -----------                        | ---------------------- | ------------------                       |
-| POST /v1/products           | Pedido de novo cartão              | JSON com nome e email  | Objeto com o número do cartão de crédito |
-| ----                        | -----------                        | ---------------------- | ------------------                       |
-| GET /v1/products/users/{id} | Obter cartões por email do usuario | nenhum                 | Matriz de todos os pedidos de cartão     |
+| API                         | Descrição                          | Corpo da solicitação    | Corpo da resposta                        |
+| --------------------------- | ---------------------------------- | ----------------------- | ---------------------------------------- |
+| POST /v1/users              | Adiciona um novo usuario           | JSON com nome e email   | Objeto do usuario cadastrado             |
+| GET /v1/users               | Obtem todos os usuarios            | nenhum                  | Matriz de usuarios                       |
+| POST /v1/products           | Pedido de novo cartão              | JSON com título e email | Objeto com o número do cartão de crédito |
+| GET /v1/products/users/{id} | Obter cartões por email do usuario | nenhum                  | Matriz de todos os pedidos de cartão     |
 
 ### Criar o projeto Web
 
