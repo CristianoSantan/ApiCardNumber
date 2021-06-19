@@ -33,9 +33,7 @@ Você ira criar a seguinte API:
 ### Criar o projeto Web
 
 - Abra o terminal integrado.
-
 - Altere os diretórios (cd) para a pasta que conterá a pasta do projeto.
-
 - Execute os seguintes comandos:
 
 ```
@@ -70,7 +68,6 @@ Como o Swagger foi removido, a marcação anterior altera a URL que é lançada 
 ### Adicione classes de modelo
 
 - Adicione uma pasta chamada Models .
-
 - Adicione um arquivo User.cs à pasta Models com o seguinte código:
 
 ```
@@ -126,7 +123,6 @@ namespace testeef.Models
 ### Adicione um contexto de banco de dados
 
 - Adicione uma pasta chamada Data.
-
 - Adicione um arquivo DataContext.cs à pasta Data com o seguinte código:
 
 ```
@@ -304,17 +300,11 @@ namespace testeef.Controllers
 #### Cadastrando usuario
 
 - Crie uma solicitação.<br>
-
 - Defina o método HTTP como POST.<br>
-
 - De definir o URI como https://localhost:<port>/v1/users . Por exemplo, https://localhost:5001/v1/users.<br>
-
 - Selecione a guia Corpo.<br>
-
 - Selecione o botão de opção raw.<br>
-
 - Defina o tipo como JSON (aplicativo/json).<br>
-
 - No corpo da solicitação, insira JSON para usuario:<br>
 
 ```
@@ -331,17 +321,11 @@ namespace testeef.Controllers
 #### Fazendo pedido de cartão
 
 - Crie uma solicitação.<br>
-
 - Defina o método HTTP como POST.<br>
-
 - De definir o URI como https://localhost:<port>/v1/products . Por exemplo, https://localhost:5001/v1/products.<br>
-
 - Selecione a guia Corpo.<br>
-
 - Selecione o botão de opção raw.<br>
-
 - Defina o tipo como JSON (aplicativo/json).<br>
-
 - No corpo da solicitação, insira JSON para o pedido do cartão:<br>
 
 ```
@@ -356,11 +340,7 @@ namespace testeef.Controllers
 #### Consultando os cartões gerados por cada email de usuario
 
 - Crie uma solicitação.<br>
-
 - Defina o método HTTP como GET.<br>
-
 - Defina o URI como, https://localhost:5001/v1/products/users/jose@email.com.<br>
-
 - Selecione Enviar.<br>
-
 - e sera retornado um objeto com os cartões solicidados por cada email.
